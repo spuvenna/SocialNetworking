@@ -1,0 +1,6 @@
+23:35:02.012 [main] INFO  stepDefinations.StepDefination - io.restassured.internal.RestAssuredResponseImpl@b2c4a8b
+23:35:02.030 [main] INFO  stepDefinations.StepDefination - Code is 201
+23:35:02.051 [main] INFO  stepDefinations.StepDefination - Starting of GET API execution
+23:35:02.057 [main] INFO  stepDefinations.StepDefination - UserListAPI
+23:35:02.362 [main] INFO  stepDefinations.StepDefination - io.restassured.internal.RestAssuredResponseImpl@251c8145
+23:35:02.377 [main] INFO  stepDefinations.StepDefination - Starting of GET API execution
