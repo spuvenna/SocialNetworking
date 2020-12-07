@@ -2,78 +2,99 @@ package stepDefinations;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertEquals;
-
-import java.io.IOException;
-
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
-import resources.APIResources;
-import resources.TestDataBuild;
-import resources.Utils;
+import org.junit.Assert;
+import cucumber.api.DataTable;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import reusable.ConfigUtils;
+import resources.RequestRunner;
+import resources.ResponseFromAPI;
 
 /**
  * 
- * @author Sowmya
- * StepDefination class has the complete implementation for the feature file
+ * @author Sowmya StepDefination class has the complete implementation for the
+ *         feature file
  *
  */
-public class StepDefination extends Utils {
-
-	RequestSpecification res;
-	ResponseSpecification resspec;
-	Response response;
-	TestDataBuild data = new TestDataBuild();
+public class StepDefination {
 
 	private static Logger log = LogManager.getLogger(StepDefination.class.getName());
+	String microServiceURI;
 
-	@Given("New Post Payload {string} {string} {string}")
-	public void new_post_payload(String title, String body, String user) throws IOException {
-		log.info("Starting of Post API execution");
-		int userid = Integer.parseInt(user);
-		res = given().spec(requestSpecification()).body(data.postPayLoad(title, body, userid));
+	
+	@Given("^User with (PostAPI|UserListAPI|CommentsAPI)$")
+	public void userWith(String resource) {
+		String baseUrl = ConfigUtils.retrieveValueForGivenKey("baseurl").toString();
+		String apiEndPoint = ConfigUtils.retrieveValueForGivenKey(resource).toString();
+		microServiceURI = baseUrl + apiEndPoint;
+		log.info("API URI is '" + microServiceURI + "'");
 	}
 
-	@When("user calls NewPostAPI with http POST request")
-	public void user_calls_new_post_api_with_http_post_request() {
-		APIResources resourceAPI = APIResources.valueOf("NewPostAPI");
-		log.info(resourceAPI);
-
-		resspec = new ResponseSpecBuilder().expectStatusCode(201).expectContentType(ContentType.JSON).build();
-
-		response = res.when().post(resourceAPI.getResource());
-		log.info(response);
-	}
-
-	@Then("the {string} API call is success and status code is {string}")
-	public void the_api_call_is_success_and_status_code_is(String method, String code) {
-		if (method.equalsIgnoreCase("POST")) {
-			int statusCode = Integer.parseInt(code);
-			assertEquals(response.getStatusCode(), statusCode);
-			log.info("Code is " + statusCode);
+	
+	@When("^User hits (posts|comments|users) with input parameters \"([^\"]*)\"$")
+	public void userHitsWithInputParameters(String resource, String parameters) {
+		String[] parameterList = parameters.split(",");
+		Map<String, String> paramList = new HashMap<>();
+		for (String param : parameterList) {
+			paramList.put(param.split("-")[0].trim(), param.split("-")[1].trim());
 		}
+		RequestRunner.getWithInputParams(null, microServiceURI, paramList);
+		log.info("Sent API Service Request for '" + microServiceURI + "' successfully");
 	}
 
-	@Given("GET payload")
-	public void get_payload() throws IOException {
-		log.info("Starting of GET API execution");
-		res = given().spec(requestSpecification());
+	@Then("^User validates the (PostAPI|UserListAPI|CommentsAPI) response code \"([^\"]*)\"$")
+	public void userValidatesTheResponseCode(String resource, String code) {
+		int respStatus = ResponseFromAPI.getStatusCode();
+		log.info("The '" + resource + "' API Service has ran and returned '" + respStatus + "' response status code");
+		Assert.assertEquals(code, String.valueOf(respStatus));
 	}
 
-	@When("User calls {string} with http GET request")
-	public void user_calls_with_http_get_request(String string) {
-		APIResources resourceAPI = APIResources.valueOf(string);
-		log.info(resourceAPI);
-		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-		response = res.when().get(resourceAPI.getResource());
-		log.info(response);
+	@Then("^User validates the (PostAPI|UserListAPI|CommentsAPI) number of (PostAPI|UserListAPI|CommentsAPI) from system \"([^\"]*)\"$")
+	public void userValidatesTheNumberOfFromSystem(String resource, String apiType, String expectedObj) {
+		String actualObj = String.valueOf(ResponseFromAPI.getListOfOjectsFromAPIResponse().size());
+		Assert.assertEquals(actualObj, expectedObj);
+		log.info("The '" + resource + "' response returned appropriate '" + resource + "' objects as expected");
 	}
 
+	@Then("^User validates the (PostAPI|UserListAPI|CommentsAPI) response with response details \"([^\"]*)\"$")
+	public void userValidatesTheResponseWithResponseDetails(String resource, String params) {
+		String[] paramList = params.split(",");
+		List<Map<?, ?>> respObjsList = ResponseFromAPI.getListOfOjectsFromAPIResponse();
+		boolean validationFailed = false;
+
+		for (int i = 0; i < paramList.length; i++) {
+			for (int j = 0; j < respObjsList.size(); j++) {
+				Map<?, ?> respObj = respObjsList.get(j);
+				String paramName = paramList[i].split("-")[0].trim();
+				String value = paramList[i].split("-")[1].trim();
+				if (!value.equalsIgnoreCase(respObj.get(paramName).toString())) {
+					log.info("Failed param/value are " + paramName + "--" + value);
+					validationFailed = true;
+					break;
+				}
+			}
+		}
+		Assert.assertTrue(!validationFailed);
+		log.info("The '" + resource + "' response returned with appropriate details");
+	}
+
+	@Then("^User validates (PostAPI|UserListAPI|CommentsAPI) response including attributes$")
+	public void user_validates_response_including_attributes(String resource, DataTable attributes) {
+		List<String> attributesList = attributes.transpose().asList(String.class);
+		Map<?, ?> postObject = ResponseFromAPI.getListOfOjectsFromAPIResponse().get(0);
+		boolean attributeNotFound = false;
+		for (String key : attributesList) {
+			if (!postObject.containsKey(key)) {
+				log.info("Given attribute '" + key + "' is not found in '" + resource + "' reponse");
+				attributeNotFound = true;
+				break;
+			}
+		}
+		Assert.assertTrue(!attributeNotFound);
+		log.info("Input attributes are present in response");
+	}
 }

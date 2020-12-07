@@ -1,6 +1,0 @@
-23:35:02.407 [main] INFO  stepDefinations.StepDefination - CommentsAPI
-23:35:02.763 [main] INFO  stepDefinations.StepDefination - io.restassured.internal.RestAssuredResponseImpl@666618d6
-00:00:15.274 [main] INFO  stepDefinations.StepDefination - Starting of Post API execution
-00:00:16.645 [main] INFO  stepDefinations.StepDefination - NewPostAPI
-00:00:18.393 [main] INFO  stepDefinations.StepDefination - io.restassured.internal.RestAssuredResponseImpl@b2c4a8b
-00:00:18.399 [main] INFO  stepDefinations.StepDefination - Code is 201

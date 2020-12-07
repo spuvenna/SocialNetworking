@@ -1,6 +1,0 @@
-00:00:18.416 [main] INFO  stepDefinations.StepDefination - Starting of GET API execution
-00:00:18.432 [main] INFO  stepDefinations.StepDefination - UserListAPI
-00:00:18.563 [main] INFO  stepDefinations.StepDefination - io.restassured.internal.RestAssuredResponseImpl@251c8145
-00:00:18.566 [main] INFO  stepDefinations.StepDefination - Starting of GET API execution
-00:00:18.569 [main] INFO  stepDefinations.StepDefination - CommentsAPI
-00:00:18.792 [main] INFO  stepDefinations.StepDefination - io.restassured.internal.RestAssuredResponseImpl@666618d6

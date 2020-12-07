@@ -1,0 +1,1809 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 624200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "",
+        "description": "Verify \"POST\" service and ensure response returns \"Post\" content from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 475100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 419551300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User with PostAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User hits PostAPI with input parameters \"userId - 2\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User validates the PostAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User validates the PostAPI number of PostAPI from system \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "PostAPI",
+                  "offset": 37
+                },
+                {
+                  "val": "5",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User validates the PostAPI response with response details \"userId - 2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "userId - 2",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User validates PostAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "title"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "body"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 3,
+            "name": "@postAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 596600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "",
+        "description": "Verify \"POST\" service and ensure response returns \"Post\" content from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 510500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 924200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User with PostAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User hits PostAPI with input parameters \"id - 10\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User validates the PostAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User validates the PostAPI number of PostAPI from system \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "PostAPI",
+                  "offset": 37
+                },
+                {
+                  "val": "1",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User validates the PostAPI response with response details \"id - 10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "id - 10",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User validates PostAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "title"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "body"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 3,
+            "name": "@postAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 574200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "",
+        "description": "Verify \"POST\" service and ensure response returns \"Post\" content from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 382600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1710600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User with PostAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User hits PostAPI with input parameters \"id - 10, userId - 2\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User validates the PostAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User validates the PostAPI number of PostAPI from system \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "PostAPI",
+                  "offset": 37
+                },
+                {
+                  "val": "1",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User validates the PostAPI response with response details \"id - 10, userId - 2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "id - 10, userId - 2",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User validates PostAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "title"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "body"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 3,
+            "name": "@postAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 689600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "",
+        "description": "Verify \"Users\" API and gets appropriate \"User\" information from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 319400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 686200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User with UserListAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "User hits UserListAPI with input parameters \"id - 1\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User validates the UserListAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User validates the UserListAPI number of UserListAPI from system \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "UserListAPI",
+                  "offset": 41
+                },
+                {
+                  "val": "1",
+                  "offset": 66
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User validates the UserListAPI response with response details \"id - 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "id - 1",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User validates UserListAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "name"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "phone"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "email"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "website"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "company"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "address"
+                ],
+                "line": 38
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 23,
+            "name": "@getUserListAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 399900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "",
+        "description": "Verify \"Users\" API and gets appropriate \"User\" information from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 354900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 784200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User with UserListAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "User hits UserListAPI with input parameters \"username - Bret\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User validates the UserListAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User validates the UserListAPI number of UserListAPI from system \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "UserListAPI",
+                  "offset": 41
+                },
+                {
+                  "val": "1",
+                  "offset": 66
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User validates the UserListAPI response with response details \"username - Bret\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "username - Bret",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User validates UserListAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "name"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "phone"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "email"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "website"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "company"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "address"
+                ],
+                "line": 38
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 23,
+            "name": "@getUserListAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 465700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "",
+        "description": "Verify \"Users\" API and gets appropriate \"User\" information from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 355700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 648400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User with UserListAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "User hits UserListAPI with input parameters \"name - Ervin Howell,website - Shanna@melissa.tv,username - Antonette\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User validates the UserListAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User validates the UserListAPI number of UserListAPI from system \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "UserListAPI",
+                  "offset": 41
+                },
+                {
+                  "val": "1",
+                  "offset": 66
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User validates the UserListAPI response with response details \"name - Ervin Howell,website - Shanna@melissa.tv,username - Antonette\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "name - Ervin Howell,website - Shanna@melissa.tv,username - Antonette",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User validates UserListAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserListAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "name"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "phone"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "email"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "website"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "company"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "address"
+                ],
+                "line": 38
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 23,
+            "name": "@getUserListAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 490300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 63,
+        "name": "",
+        "description": "Verify \"Comments\" API and gets appropriate \"Comment\" information from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 493900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1248100,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User with CommentsAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "User hits CommentsAPI with input parameters \"postId - 1\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "User validates the CommentsAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "User validates the CommentsAPI number of CommentsAPI from system \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "CommentsAPI",
+                  "offset": 41
+                },
+                {
+                  "val": "5",
+                  "offset": 66
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User validates the CommentsAPI response with response details \"postId - 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "postId - 1",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User validates CommentsAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "postId"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "name"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "body"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "email"
+                ],
+                "line": 59
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 46,
+            "name": "@getCommentsAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 684000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 64,
+        "name": "",
+        "description": "Verify \"Comments\" API and gets appropriate \"Comment\" information from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 428300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 926800,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User with CommentsAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "User hits CommentsAPI with input parameters \"email - Eliseo@gardner.biz\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "User validates the CommentsAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "User validates the CommentsAPI number of CommentsAPI from system \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "CommentsAPI",
+                  "offset": 41
+                },
+                {
+                  "val": "1",
+                  "offset": 66
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User validates the CommentsAPI response with response details \"email - Eliseo@gardner.biz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "email - Eliseo@gardner.biz",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User validates CommentsAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "postId"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "name"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "body"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "email"
+                ],
+                "line": 59
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 46,
+            "name": "@getCommentsAPI"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 714300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeExecOfEachScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 65,
+        "name": "",
+        "description": "Verify \"Comments\" API and gets appropriate \"Comment\" information from system",
+        "id": "validating-new-post,get-comments-apis-for-social-networking-site;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 550000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterExecOfEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 658800,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User with CommentsAPI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.userWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "User hits CommentsAPI with input parameters \"postId - 1,id - 5\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "User validates the CommentsAPI response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseCode(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "User validates the CommentsAPI number of CommentsAPI from system \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "CommentsAPI",
+                  "offset": 41
+                },
+                {
+                  "val": "1",
+                  "offset": 66
+                }
+              ],
+              "location": "StepDefination.userValidatesTheNumberOfFromSystem(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User validates the CommentsAPI response with response details \"postId - 1,id - 5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "postId - 1,id - 5",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefination.userValidatesTheResponseWithResponseDetails(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User validates CommentsAPI response including attributes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CommentsAPI",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.user_validates_response_including_attributes(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "postId"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "id"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "name"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "body"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "email"
+                ],
+                "line": 59
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@testAPIValues"
+          },
+          {
+            "line": 46,
+            "name": "@getCommentsAPI"
+          }
+        ]
+      }
+    ],
+    "name": "Validating New Post,Get Comments APIs for Social Networking Site",
+    "description": "",
+    "id": "validating-new-post,get-comments-apis-for-social-networking-site",
+    "keyword": "Feature",
+    "uri": "actions.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@testAPIValues"
+      }
+    ]
+  }
+]

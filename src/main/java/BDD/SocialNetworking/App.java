@@ -1,7 +1,5 @@
 package BDD.SocialNetworking;
 
-import io.cucumber.core.logging.Logger;
-
 /**
  * Hello world!
  *

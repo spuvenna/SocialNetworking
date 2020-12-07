@@ -1,0 +1,56 @@
+2020-12-07 21:02:38,108  INFO [main] TestRunner:33 - ------------------------------------Test Case Execution started ----------------------------------------------
+2020-12-07 21:02:38,122  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,123  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,546  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,547  INFO [main] ConfigUtils:22 - Retrieved value '/posts' for given key 'PostAPI'
+2020-12-07 21:02:38,551  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,552  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,552  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,553  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,556  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,556  INFO [main] ConfigUtils:22 - Retrieved value '/posts' for given key 'PostAPI'
+2020-12-07 21:02:38,560  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,560  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,561  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,562  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,565  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,566  INFO [main] ConfigUtils:22 - Retrieved value '/posts' for given key 'PostAPI'
+2020-12-07 21:02:38,568  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,569  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,571  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,571  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,573  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,573  INFO [main] ConfigUtils:22 - Retrieved value '/users' for given key 'UserListAPI'
+2020-12-07 21:02:38,576  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,576  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,576  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,576  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,579  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,579  INFO [main] ConfigUtils:22 - Retrieved value '/users' for given key 'UserListAPI'
+2020-12-07 21:02:38,581  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,581  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,582  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,582  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,584  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,584  INFO [main] ConfigUtils:22 - Retrieved value '/users' for given key 'UserListAPI'
+2020-12-07 21:02:38,586  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,586  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,588  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,588  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,590  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,591  INFO [main] ConfigUtils:22 - Retrieved value '/comments' for given key 'CommentsAPI'
+2020-12-07 21:02:38,594  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,594  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,595  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,596  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,598  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,599  INFO [main] ConfigUtils:22 - Retrieved value '/comments' for given key 'CommentsAPI'
+2020-12-07 21:02:38,601  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,601  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,603  INFO [main] Hooks:16 - ***********************************************************************************************
+2020-12-07 21:02:38,603  INFO [main] Hooks:17 - Execution is started for the scenario  successfully*********************
+2020-12-07 21:02:38,605  INFO [main] ConfigUtils:22 - Retrieved value 'https://jsonplaceholder.typicode.com' for given key 'baseurl'
+2020-12-07 21:02:38,605  INFO [main] ConfigUtils:22 - Retrieved value '/comments' for given key 'CommentsAPI'
+2020-12-07 21:02:38,607  INFO [main] Hooks:22 - Execution is completed for the scenario  successfully********************
+2020-12-07 21:02:38,607  INFO [main] Hooks:23 - ************************************************************************************************
+2020-12-07 21:02:38,608  INFO [main] TestRunner:39 - ------------------------------------Test Case Execution is ended--------------------------------------------------
